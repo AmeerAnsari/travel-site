@@ -1,5 +1,5 @@
 body{
-    font-family: 'FiraCode NF', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
 }
 
@@ -7,4 +7,5 @@ body{
 img{
     max-width: 100%;
     height: auto;
-}
+}   
+
