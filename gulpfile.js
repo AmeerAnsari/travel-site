@@ -4,7 +4,8 @@ postcss = require('gulp-postcss'),
 cssvars = require('postcss-simple-vars'),
 autoprefixer = require('autoprefixer'),
 nested = require('postcss-nested'),
-cssImport = require('postcss-import');
+cssImport = require('postcss-import'),
+browserSync = require('browser-sync').create();
 
 
 // default talk
@@ -33,14 +34,26 @@ gulp.task('watch', function(){
    
     // HTML task (index.html)
     watch('./app/index.html', function(){
-        gulp.start('html');
+        browserSync.reload();
     });
 
     // CSS task (Style.css)
     watch('./app/assets/styles/**/*.css', function () {
-    gulp.start('styles');
+    gulp.start('cssInject');
     });
 
-    // 
+    browserSync.init({
+        notify: false,
+        server: {
+            baseDir: 'app'
+        }
+    });
 
+});
+
+
+// task
+gulp.task('cssInject', ['styles'], function(){
+   return gulp.src('app/temp/styles/styles.css')
+    .pipe(browserSync.stream());
 });
