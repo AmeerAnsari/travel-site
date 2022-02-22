@@ -557,7 +557,21 @@ img{
 .wrapper{
     padding-left: 18px;
     padding-right: 18px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* top and bottom padding  */
+
+.page-section{
+    padding: 4.5rem 0;
+}
+
+.page-section__blue{
+        background-color: #2f5572;
+        color: #FFF; 
+    }
 
 
 
