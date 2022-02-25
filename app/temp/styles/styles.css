@@ -573,6 +573,45 @@ img{
         color: #FFF; 
     }
 
+.headline{
+    font-weight: 300;
+    font-size: 2.875rem;
+    color: #2f5572;
+
+    
+}
+
+.headline__centered{
+        text-align: center;
+    }
+
+.headline__orange{
+        color: #d59541;
+    }
+
+.headline__small{
+        font-size: 1.875rem;
+    }
+
+.headline__narrow{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.headline__light{
+        font-weight: 100;
+    }
+
+.headline__b-margin-small{
+        margin-bottom: .5em;
+    }
+
+.headline__b-margin-large{
+        margin-bottom: 1.6em;
+    }
+
+
 
 
 
