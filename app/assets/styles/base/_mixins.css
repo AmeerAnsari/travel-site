@@ -15,3 +15,12 @@
         @mixin-content;
     }
 }
+
+@define-mixin clearfix{
+    /* CSS selector display this after all the content is shown in main row div */
+    &::after{
+        content: "";
+        clear: both;  
+        display: table;
+    }
+}

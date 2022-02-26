@@ -9,3 +9,7 @@ img{
     height: auto;
 }   
 
+
+* {
+    box-sizing: border-box; /* for using our own setting*/
+}

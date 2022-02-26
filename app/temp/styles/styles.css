@@ -462,6 +462,11 @@ img{
     height: auto;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; /* for using our own setting*/
+}
+
 /* Block  - BEM Philosophy applied */
 
 .large-hero{  
@@ -555,6 +560,7 @@ img{
     }
 
 .wrapper{
+    overflow: hidden;
     padding-left: 18px;
     padding-right: 18px;
     max-width: 1200px;
@@ -641,6 +647,34 @@ img{
 
 .headline__b-margin-large{
         margin-bottom: 1.6em;
+    }
+
+/* CSS selector display this after all the content is shown in main row div */
+
+.row::after{
+        content: "";
+        clear: both;  
+        display: table;
+    }
+
+.row__gutters{
+        margin-right: -65px;
+    }
+
+.row__gutters > div {
+        padding-right: 65px;
+    }
+
+@media (min-width: 800px){
+        .row__medium-4{
+            float: left;
+            width: 33.33%;
+        }
+    
+        .row__medium-8{
+            float: left;
+            width: 66.66%;
+        }
     }
 
 
