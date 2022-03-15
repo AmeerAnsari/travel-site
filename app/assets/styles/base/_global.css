@@ -13,3 +13,7 @@ img{
 * {
     box-sizing: border-box; /* for using our own setting*/
 }
+
+a{
+    color: $mainOrange;
+}

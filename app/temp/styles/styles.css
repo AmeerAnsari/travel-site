@@ -467,6 +467,10 @@ img{
             box-sizing: border-box; /* for using our own setting*/
 }
 
+a{
+    color: #d59541;
+}
+
 /* Block  - BEM Philosophy applied */
 
 .large-hero{  
@@ -610,7 +614,6 @@ img{
     font-weight: 300;
     font-size: 1.6rem;
     color: #2f5572;
-
     
 }
 
@@ -618,7 +621,6 @@ img{
 
 .headline{
         font-size: 2.875rem
-
     
 }
     }
@@ -660,6 +662,10 @@ img{
         margin-bottom: 1.6em;
     }
 
+.headline__no-t-margin{
+        margin-top: 0;
+    }
+
 /* CSS selector display this after all the content is shown in main row div */
 
 .row::after{
@@ -676,7 +682,15 @@ img{
         padding-right: 65px;
     }
 
+.row__b-margin-until-medium {
+        margin-bottom: 1rem;
+    }
+
 @media (min-width: 800px){
+
+        .row__b-margin-until-medium {
+            margin-bottom: 0;
+        }
         .row__medium-4{
             float: left;
             width: 33.33%;
@@ -692,6 +706,22 @@ img{
         .row__medium-8--smaller{
             width: 63%;
         }
+    }
+
+.generic-content-container p{
+        line-height: 1.65;
+        margin: 1.8rem 0;
+}
+
+@media (min-width: 530px){
+
+.generic-content-container p{
+        font-size: 1.125rem
+}
+    }
+
+.generic-content-container p a {
+        font-weight: 700;
     }
 
 

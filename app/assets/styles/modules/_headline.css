@@ -34,5 +34,8 @@
         margin-bottom: 1.6em;
     }
 
+    &__no-t-margin{
+        margin-top: 0;
+    }
     
 }
